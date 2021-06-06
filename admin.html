@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Welcome Blogger Administrator</title>
+</head>
+<body>
+  <h1>Display Bloggers and Blogs</h1>
+  <form action="blog_admin_parser.php" method="post" enctype="multipart/form-data">
+
+  
+  <h2>Choose</h2>
+
+  <input type="submit" id="AllBlogs"     name="AllBlogs"     value="All Blogs"     Style="color: white; background-color:navy; border-color: black;" />
+
+  <h2>Delete A Blog</h2>
+	<p><label for="idBlogItem">idBlogItem</label>
+	<input type="text" id="idBlogItem" name="idBlogItem" maxlength="20" size="20" /></p>
+
+	<p><label for="User_idUser1">User_idUser1</label>
+	<input type="text" id="User_idUser1" name="User_idUser1" maxlength="20" size="20" /></p>
+
+	<input type="submit" id="Delete Blog" name="Delete Blog" value="Delete Blog" Style="color: white; background-color:navy; border-color: black;" />
+
+
+  </form>
+  </br>
+  <a href="signout.php">Click here to sign out.</a>
+</body>
+</html>

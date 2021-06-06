@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Welcome Blogger</title>
+</head>
+<body>
+  <h1>Display Bloggers and Blogs</h1>
+  <form action="blog_user.php" method="post" enctype="multipart/form-data">
+    
+  <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+  
+  <h2>Choose</h2>
+
+  <input type="submit" id="AllBlogs"     name="AllBlogs"     value="All Blogs"     Style="color: white; background-color:navy; border-color: black;" />
+  <input type="submit" id="AllBloggers"  name="AllBloggers"  value="All Bloggers"  Style="color: white; background-color:navy; border-color: black;" />
+
+  <h2>Show all blogs for the following blogger</h2>
+	<p><label for="Blogger Name">Blogger Name</label>
+	<input type="text" id="BloggerName1" name="BloggerName1" maxlength="20" size="20" /></p>
+
+    <input type="submit" id="DisplayBloggerBlogs"     name="DisplayBloggerBlogs"     value="Display Blogger Blogs"     Style="color: white; background-color:navy; border-color: black;" />
+	
+	<h2>Show all blogs for the following tag</h2>
+	<p><label for="TagSearch">Tag</label>
+	<input type="text" id="TagSearch" name="TagSearch" maxlength="20" size="20" /></p>
+
+    <input type="submit" id="DisplayTaggedBlogs"     name="DisplayTaggedBlogs"     value="Display Tagged Blogs"     Style="color: white; background-color:navy; border-color: black;" />
+  <h2>Search for Blogs</h2>
+  <label for="Blogs created before this date">Search for Blogs created </label>
+  <select name = "beforeafter" id = "beforeafter">
+	<option value="before">before</option>
+	<option value="after">after</option>
+  </select>
+
+  <input type="datetime-local" id="compare-time"
+       name="compare-time" ">
+	   
+  <input type="submit" id="Search Blog" name="Search" value="Search Blog" Style="color: white; background-color:navy; border-color: black;" />
+  
+  <h2>Create A Blog</h2>
+	<p><label for="Blog Summary">Blog Summary</label>
+	<input type="text" id="Blog Summary" name="Blog Summary" maxlength="20" size="20" /></p>
+
+	<p><label for="Blog Content">Blog Content</label>
+	<input type="text" id="Blog Content" name="Blog Content" maxlength="2000" size="20" /></p>
+	
+	<p><label for="Blog Content">Blog Tag</label>
+	<input type="text" id="Blog Tag" name="Blog Tag" maxlength="20" size="20" /></p>
+	
+	<input type="submit" id="Submit Blog" name="Submit Blog" value="Submit Blog" Style="color: white; background-color:navy; border-color: black;" />
+
+
+  </form>
+  </br>
+  <a href="signout.php">Click here to sign out.</a>
+</body>
+</html>

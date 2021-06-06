@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>registration interface login</title>
+</head>
+<body>
+  <h1>Course Registration Login</h1>
+  <form action="login_parser.php" method="post" enctype="multipart/form-data">
+    
+  <h3>Login:</h3>
+	<p><label for="Username">Username</label>
+	<input type="text" id="Username" name="Username" maxlength="20" size="20" /></p>
+	<p><label for="Password">Password</label>
+	<input type="password" id="Password" name="Password" maxlength="20" size="20" /></p>
+	
+	<p><label for="Type">Type</label>
+	<select name="type" id=type>
+	  <option value="User">User</option>
+	  <option value="Admin">Admin</option>
+	</select>
+   <h3></h3>	
+	<input type="submit" id="Login" name="Login" value="Login" Style="color: white; background-color:navy; border-color: black;" />
+
+  </form>
+  </br>
+  </br>
+  <a href="signup.html">Want to sign up instead?</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>registration interface login</title>
+</head>
+<body>
+  <h1>Course Registration Sign Up</h1>
+  <form action="signup_parser.php" method="post" enctype="multipart/form-data">
+    
+  <h3>Sign Up:</h3>
+	<p><label for="Username">Username</label>
+	<input type="text" id="Username" name="Username" maxlength="20" size="20" /></p>
+	<p><label for="Password">Password</label>
+	<input type="password" id="Password" name="Password" maxlength="20" size="20" /></p>
+	
+   <h3></h3>	
+	<input type="submit" id="SignUp" name="SignUp" value="Sign Up" Style="color: white; background-color:navy; border-color: black;" />
+
+  </form>
+  </br>
+  <h3>Every password for a new account must...</h3>
+  <ol>
+	<li>Be at least 6 characters long.</li>
+	<li>Include an uppercase letter.</li>
+	<li>Include a lowercase letter.</li>
+	<li>Include a digit.</li>
+  </ol>
+  </br>
+  <a href="login.html">Want to log in instead?</a>
+</body>
+</html>
